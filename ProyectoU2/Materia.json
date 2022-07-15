@@ -1,0 +1,5 @@
+{"_id":{"$oid":"62d0ef526f0036300416b7e5"},"Id_Materia":"1","Id_Maestro":"1","Id_Alumno":"1","Nombre_Materia":"Logica"}
+{"_id":{"$oid":"62d0ef816f0036300416b7e6"},"Id_Materia":"1","Id_Maestro":"1","Id_Alumno":"2","Nombre_Materia":"Logica"}
+{"_id":{"$oid":"62d0ef856f0036300416b7e7"},"Id_Materia":"1","Id_Maestro":"1","Id_Alumno":"3","Nombre_Materia":"Logica"}
+{"_id":{"$oid":"62d0ef8a6f0036300416b7e8"},"Id_Materia":"1","Id_Maestro":"1","Id_Alumno":"4","Nombre_Materia":"Logica"}
+{"_id":{"$oid":"62d0ef8f6f0036300416b7e9"},"Id_Materia":"1","Id_Maestro":"1","Id_Alumno":"5","Nombre_Materia":"Logica"}

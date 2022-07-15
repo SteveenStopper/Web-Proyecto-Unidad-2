@@ -1,0 +1,242 @@
+> use dbProyectoU2
+switched to db dbProyectoU2
+> db.Alumno.save({Id_Alumno:'1', Id_Tutor: '1', Nombre: 'Valeria',Apellido_P:'Suarez',Apellido_M:'Ramirez',Edad:5,Fecha_Na:'2017-05-13',Email:'valeria17@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> Alumno.save({Id_Alumno:'2', Id_Tutor: '2', Nombre: 'Carlos',Apellido_P:'Herrera',Apellido_M:'Flores',Edad:5,Fecha_Na:'2017-06-26',Email:'chflores@thestoppereducation.ec'});
+uncaught exception: ReferenceError: Alumno is not defined :
+@(shell):1:1
+> db.Alumno.save({Id_Alumno:'2', Id_Tutor: '2', Nombre: 'Carlos',Apellido_P:'Herrera',Apellido_M:'Flores',Edad:5,Fecha_Na:'2017-06-26',Email:'chflores@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> db.Alumno.save({Id_Alumno:'3', Id_Tutor: '3', Nombre: 'Maria',Apellido_P:'Romero',Apellido_M:'Lopez',Edad:5,Fecha_Na:'2017-08-04',Email:'mrlopez@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> db.Alumno.save({Id_Alumno:'4', Id_Tutor: '4', Nombre: 'Liliana',Apellido_P:'Martinez',Apellido_M:'Fernandez',Edad:5,Fecha_Na:'2017-10-16',Email:'lmfernandez@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> db.Alumno.save({Id_Alumno:'5', Id_Tutor: '5', Nombre: 'Jose',Apellido_P:'Gimenez',Apellido_M:'Rodriguez',Edad:5,Fecha_Na:'2017-01-21',Email:'jgrodriguez@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> var allRecords = db.Alumno.find();
+> while(allRecords.hasNext()){printjson(allRecords.next());}
+{
+        "_id" : ObjectId("62d0eaf96f0036300416b7df"),
+        "Id_Alumno" : "1",
+        "Id_Tutor" : "1",
+        "Nombre" : "Valeria",
+        "Apellido_P" : "Suarez",
+        "Apellido_M" : "Ramirez",
+        "Edad" : 5,
+        "Fecha_Na" : "2017-05-13",
+        "Email" : "valeria17@thestoppereducation.ec"
+}
+{
+        "_id" : ObjectId("62d0eccf6f0036300416b7e0"),
+        "Id_Alumno" : "2",
+        "Id_Tutor" : "2",
+        "Nombre" : "Carlos",
+        "Apellido_P" : "Herrera",
+        "Apellido_M" : "Flores",
+        "Edad" : 5,
+        "Fecha_Na" : "2017-06-26",
+        "Email" : "chflores@thestoppereducation.ec"
+}
+{
+        "_id" : ObjectId("62d0ecdb6f0036300416b7e1"),
+        "Id_Alumno" : "3",
+        "Id_Tutor" : "3",
+        "Nombre" : "Maria",
+        "Apellido_P" : "Romero",
+        "Apellido_M" : "Lopez",
+        "Edad" : 5,
+        "Fecha_Na" : "2017-08-04",
+        "Email" : "mrlopez@thestoppereducation.ec"
+}
+{
+        "_id" : ObjectId("62d0ece36f0036300416b7e2"),
+        "Id_Alumno" : "4",
+        "Id_Tutor" : "4",
+        "Nombre" : "Liliana",
+        "Apellido_P" : "Martinez",
+        "Apellido_M" : "Fernandez",
+        "Edad" : 5,
+        "Fecha_Na" : "2017-10-16",
+        "Email" : "lmfernandez@thestoppereducation.ec"
+}
+{
+        "_id" : ObjectId("62d0eced6f0036300416b7e3"),
+        "Id_Alumno" : "5",
+        "Id_Tutor" : "5",
+        "Nombre" : "Jose",
+        "Apellido_P" : "Gimenez",
+        "Apellido_M" : "Rodriguez",
+        "Edad" : 5,
+        "Fecha_Na" : "2017-01-21",
+        "Email" : "jgrodriguez@thestoppereducation.ec"
+}
+> db.Maestro.save({Id_Maestro:'1',Nombre:'Pedro',Apellido_P:'Sosa',Apellido_M:'Benitez',Fecha_Na:'1990-10-03',Edad:'31',Email:'psbenitez@thestoppereducation.ec'});
+WriteResult({ "nInserted" : 1 })
+> db.Materia.save({Id_Materia:'1',Id_Maestro:'1',Id_Alumno:'1',Nombre_Materia:'Logica'});
+WriteResult({ "nInserted" : 1 })
+> db.Materia.save({Id_Materia:'1',Id_Maestro:'1',Id_Alumno:'2',Nombre_Materia:'Logica'});
+WriteResult({ "nInserted" : 1 })
+> db.Materia.save({Id_Materia:'1',Id_Maestro:'1',Id_Alumno:'3',Nombre_Materia:'Logica'});
+WriteResult({ "nInserted" : 1 })
+> db.Materia.save({Id_Materia:'1',Id_Maestro:'1',Id_Alumno:'4',Nombre_Materia:'Logica'});
+WriteResult({ "nInserted" : 1 })
+> db.Materia.save({Id_Materia:'1',Id_Maestro:'1',Id_Alumno:'5',Nombre_Materia:'Logica'});
+WriteResult({ "nInserted" : 1 })
+> db.Notas.save({Id_Notas:'1',Id_Materia:'1',Id_Alumno:'1',Id_Maestro:'1'});
+WriteResult({ "nInserted" : 1 })
+> db.Notas.save({Id_Notas:'2',Id_Materia:'1',Id_Alumno:'2',Id_Maestro:'1'});
+WriteResult({ "nInserted" : 1 })
+> db.Notas.save({Id_Notas:'3',Id_Materia:'1',Id_Alumno:'3',Id_Maestro:'1'});
+WriteResult({ "nInserted" : 1 })
+> db.Notas.save({Id_Notas:'4',Id_Materia:'1',Id_Alumno:'4',Id_Maestro:'1'});
+WriteResult({ "nInserted" : 1 })
+> db.Notas.save({Id_Notas:'5',Id_Materia:'1',Id_Alumno:'5',Id_Maestro:'1'});
+WriteResult({ "nInserted" : 1 })
+> db.Tutor.save({Id_Tutor:'1',Nombre:'Hector',Apellido_P:'Ramirez',Apellido_M:'Gimenez',Email:'hrgimenez@thestoppereducation.ec',Celular:'983521457'});
+WriteResult({ "nInserted" : 1 })
+> db.Tutor.save({Id_Tutor:'2',Nombre:'Claudio',Apellido_P:'Medina',Apellido_M:'Flores',Email:'cmflores@thestoppereducation.ec',Celular:'985421369'});
+WriteResult({ "nInserted" : 1 })
+> db.Tutor.save({Id_Tutor:'3',Nombre:'Susana',Apellido_P:'Martinez',Apellido_M:'Acosta',Email:'smacosta@thestoppereducation.ec',Celular:'987426531'});
+WriteResult({ "nInserted" : 1 })
+> var allRecords = db.Maestro.find();
+> while(allRecords.hasNext()){printjson(allRecords.next());}
+{
+        "_id" : ObjectId("62d0eed56f0036300416b7e4"),
+        "Id_Maestro" : "1",
+        "Nombre" : "Pedro",
+        "Apellido_P" : "Sosa",
+        "Apellido_M" : "Benitez",
+        "Fecha_Na" : "1990-10-03",
+        "Edad" : "31",
+        "Email" : "psbenitez@thestoppereducation.ec"
+}
+> var allRecords = db.Materia.find();
+> while(allRecords.hasNext()){printjson(allRecords.next());}
+{
+        "_id" : ObjectId("62d0ef526f0036300416b7e5"),
+        "Id_Materia" : "1",
+        "Id_Maestro" : "1",
+        "Id_Alumno" : "1",
+        "Nombre_Materia" : "Logica"
+}
+{
+        "_id" : ObjectId("62d0ef816f0036300416b7e6"),
+        "Id_Materia" : "1",
+        "Id_Maestro" : "1",
+        "Id_Alumno" : "2",
+        "Nombre_Materia" : "Logica"
+}
+{
+        "_id" : ObjectId("62d0ef856f0036300416b7e7"),
+        "Id_Materia" : "1",
+        "Id_Maestro" : "1",
+        "Id_Alumno" : "3",
+        "Nombre_Materia" : "Logica"
+}
+{
+        "_id" : ObjectId("62d0ef8a6f0036300416b7e8"),
+        "Id_Materia" : "1",
+        "Id_Maestro" : "1",
+        "Id_Alumno" : "4",
+        "Nombre_Materia" : "Logica"
+}
+{
+        "_id" : ObjectId("62d0ef8f6f0036300416b7e9"),
+        "Id_Materia" : "1",
+        "Id_Maestro" : "1",
+        "Id_Alumno" : "5",
+        "Nombre_Materia" : "Logica"
+}
+> var allRecords = db.Notas.find();
+> while(allRecords.hasNext()){printjson(allRecords.next());}
+{
+        "_id" : ObjectId("62d0f0306f0036300416b7ea"),
+        "Id_Notas" : "1",
+        "Id_Materia" : "1",
+        "Id_Alumno" : "1",
+        "Id_Maestro" : "1"
+}
+{
+        "_id" : ObjectId("62d0f0366f0036300416b7eb"),
+        "Id_Notas" : "2",
+        "Id_Materia" : "1",
+        "Id_Alumno" : "2",
+        "Id_Maestro" : "1"
+}
+{
+        "_id" : ObjectId("62d0f03c6f0036300416b7ec"),
+        "Id_Notas" : "3",
+        "Id_Materia" : "1",
+        "Id_Alumno" : "3",
+        "Id_Maestro" : "1"
+}
+{
+        "_id" : ObjectId("62d0f0416f0036300416b7ed"),
+        "Id_Notas" : "4",
+        "Id_Materia" : "1",
+        "Id_Alumno" : "4",
+        "Id_Maestro" : "1"
+}
+{
+        "_id" : ObjectId("62d0f0486f0036300416b7ee"),
+        "Id_Notas" : "5",
+        "Id_Materia" : "1",
+        "Id_Alumno" : "5",
+        "Id_Maestro" : "1"
+}
+> var allRecords = db.Tutor.find();
+> while(allRecords.hasNext()){printjson(allRecords.next());}
+{
+        "_id" : ObjectId("62d0f1b46f0036300416b7ef"),
+        "Id_Tutor" : "1",
+        "Nombre" : "Hector",
+        "Apellido_P" : "Ramirez",
+        "Apellido_M" : "Gimenez",
+        "Email" : "hrgimenez@thestoppereducation.ec",
+        "Celular" : "983521457"
+}
+{
+        "_id" : ObjectId("62d0f1ba6f0036300416b7f0"),
+        "Id_Tutor" : "2",
+        "Nombre" : "Claudio",
+        "Apellido_P" : "Medina",
+        "Apellido_M" : "Flores",
+        "Email" : "cmflores@thestoppereducation.ec",
+        "Celular" : "985421369"
+}
+{
+        "_id" : ObjectId("62d0f1c36f0036300416b7f1"),
+        "Id_Tutor" : "3",
+        "Nombre" : "Susana",
+        "Apellido_P" : "Martinez",
+        "Apellido_M" : "Acosta",
+        "Email" : "smacosta@thestoppereducation.ec",
+        "Celular" : "987426531"
+}
+
+EXPORTACION DE COLECCIONES
+
+Microsoft Windows [Versión 10.0.19044.1645]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Personal>cd C:\MongoDB\Tools\100\bin
+
+C:\MongoDB\Tools\100\bin>mongoexport --db dbProyectoU2 -c Alumno --out Alumno.json
+2022-07-14T23:56:29.509-0500    connected to: mongodb://localhost/
+2022-07-14T23:56:29.673-0500    exported 5 records
+
+C:\MongoDB\Tools\100\bin>mongoexport --db dbProyectoU2 -c Maestro --out Maestro.json
+2022-07-14T23:57:04.627-0500    connected to: mongodb://localhost/
+2022-07-14T23:57:04.654-0500    exported 1 record
+
+C:\MongoDB\Tools\100\bin>mongoexport --db dbProyectoU2 -c Materia --out Materia.json
+2022-07-14T23:57:12.303-0500    connected to: mongodb://localhost/
+2022-07-14T23:57:12.335-0500    exported 5 records
+
+C:\MongoDB\Tools\100\bin>mongoexport --db dbProyectoU2 -c Notas --out Notas.json
+2022-07-14T23:57:22.398-0500    connected to: mongodb://localhost/
+2022-07-14T23:57:22.448-0500    exported 5 records
+
+C:\MongoDB\Tools\100\bin>mongoexport --db dbProyectoU2 -c Tutor --out Tutor.json
+2022-07-14T23:57:29.581-0500    connected to: mongodb://localhost/
+2022-07-14T23:57:29.643-0500    exported 3 records
