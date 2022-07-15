@@ -1,0 +1,9 @@
+{"_id":{"$oid":"59c0bb5a74n91178za5956l1"},"Id_Notas":1,"Id_Materia":1,"Id_Alumno":1,"Id_Maestro":1}
+
+{"_id":{"$oid":"59c0bb5a74n91178za5956l2"},"Id_Notas":2,"Id_Materia":1,"Id_Alumno":2,"Id_Maestro":1}
+
+{"_id":{"$oid":"59c0bb5a74n91178za5956l3"},"Id_Notas":3,"Id_Materia":1,"Id_Alumno":3,"Id_Maestro":1}
+
+{"_id":{"$oid":"59c0bb5a74n91178za5956l4"},"Id_Notas":4,"Id_Materia":1,"Id_Alumno":4,"Id_Maestro":1}
+
+{"_id":{"$oid":"59c0bb5a74n91178za5956l5"},"Id_Notas":5,"Id_Materia":1,"Id_Alumno":5,"Id_Maestro":1}
