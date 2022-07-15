@@ -1,9 +1,0 @@
-{"_id":{"$oid":"72c0bb5a74n91178za2966l1"},"Id_Alumno":1,"Id_Tutor":1,"Nombre":"Valeria","Apellido_P":"Suarez","Apellido_M":"Ramirez","Edad":5,"Fecha_Na":"2017-05-13","Email":"valeria17@thestoppereducation.ec"}
-
-{"_id":{"$oid":"72c0bb5a74n91178za2966l2"},"Id_Alumno":2,"Id_Tutor":2,"Nombre":"Carlos","Apellido_P":"Herrera","Apellido_M":"Flores","Edad":5,"Fecha_Na":"2017-06-20","Email":"chflores@thestoppereducation.ec"}
-
-{"_id":{"$oid":"72c0bb5a74n91178za2966l3"},"Id_Alumno":3,"Id_Tutor":3,"Nombre":"María","Apellido_P":"Romero","Apellido_M":"Lopez","Edad":5,"Fecha_Na":"2017-03-10","Email":"mrlopez@thestoppereducation.ec"}
-
-{"_id":{"$oid":"72c0bb5a74n91178za2966l4"},"Id_Alumno":4,"Id_Tutor":4,"Nombre":"Liliana","Apellido_P":"Martinez","Apellido_M":"Fernandez","Edad":5,"Fecha_Na":"2017-03-10","Email":"lmfernandez@thestoppereducation.ec"}
-
-{"_id":{"$oid":"72c0bb5a74n91178za2966l5"},"Id_Alumno":5,"Id_Tutor":5,"Nombre":"José","Apellido_P":"Gimenez","Apellido_M":"Rodriguez","Edad":5,"Fecha_Na":"2017-03-10","Email":"jgrodriguez@thestoppereducation.ec"}

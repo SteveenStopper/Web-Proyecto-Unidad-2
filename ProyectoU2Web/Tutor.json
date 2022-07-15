@@ -1,5 +1,0 @@
-{"_id":{"$oid":"30c0bb5a74n91178za3066l1"},"Id_Tutor":1,"Nombre":"Hector","Apellido_P":"Ramirez","Apellido_M":"Gimenez","Email":"hrgimenez@thestoppereducation.ec","Celular":983521457}
-
-{"_id":{"$oid":"30c0bb5a74n91178za3066l2"},"Id_Tutor":2,"Nombre":"Claudio","Apellido_P":"Medina","Apellido_M":"Flores","Email":"cmflores@thestoppereducation.ec","Celular":985421369}
-
-{"_id":{"$oid":"30c0bb5a74n91178za3066l3"},"Id_Tutor":3,"Nombre":"Susana","Apellido_P":"Martinez","Apellido_M":"Acosta","Email":"smacosta@thestoppereducation.ec","Celular":987426531}
